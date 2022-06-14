@@ -3,7 +3,7 @@ import logging as logger
 from datetime import datetime, timedelta
 from jose import jwt
 from jose.exceptions import JWTError, JWTClaimsError, ExpiredSignatureError
-from src.exceptions.CredentialNotInJwtError import CredentialNotInJwtError
+from src.token_helper.exceptions.CredentialNotInJwtError import CredentialNotInJwtError
 
 class TokenHelper():
     """
